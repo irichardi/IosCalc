@@ -128,7 +128,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFl-eJ-1B5">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="*"/>
+                                <state key="normal" title="-"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="57" y="317" width="46" height="30"/>
                                 </variation>
@@ -136,34 +136,14 @@
                                     <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vd-7b-Q72"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96e-62-6RR">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="-"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="57" y="267" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dc0-7L-yEN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diH-5u-Vc0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="/"/>
+                                <state key="normal" title="+"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="297" y="317" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYn-gu-pc0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-YE-iGz">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="+"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="297" y="267" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="calcTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hd-qw-qe4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBZ-tJ-7Rn">
@@ -174,16 +154,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="equalsTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOY-TJ-j3G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv2-IV-ote">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Clear"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="57" y="355" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnH-WD-6zw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -202,11 +172,8 @@
                                 <exclude reference="Iy1-LF-VbS"/>
                                 <exclude reference="D5C-BT-lXj"/>
                                 <exclude reference="PFl-eJ-1B5"/>
-                                <exclude reference="96e-62-6RR"/>
                                 <exclude reference="diH-5u-Vc0"/>
-                                <exclude reference="Kaj-YE-iGz"/>
                                 <exclude reference="yBZ-tJ-7Rn"/>
-                                <exclude reference="Dv2-IV-ote"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -223,11 +190,8 @@
                                 <include reference="Iy1-LF-VbS"/>
                                 <include reference="D5C-BT-lXj"/>
                                 <include reference="PFl-eJ-1B5"/>
-                                <include reference="96e-62-6RR"/>
                                 <include reference="diH-5u-Vc0"/>
-                                <include reference="Kaj-YE-iGz"/>
                                 <include reference="yBZ-tJ-7Rn"/>
-                                <include reference="Dv2-IV-ote"/>
                             </mask>
                         </variation>
                     </view>

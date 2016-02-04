@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     }
     
     var isTypingNum:Bool = false
-    var firstNumber:Int! = 0
-    var secNumber:Int! = 0
-    var operation:String! = " "
+    var firstNumber:Int? = 0
+    var secNumber:Int? = 0
+    var operation:String = " "
     
     @IBOutlet weak var calcDisplay: UILabel!
     
@@ -41,53 +41,29 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalsTap(sender: AnyObject) {
-        
-        isTypingNum = false
-        var result:Int = 0
-        
+        var result = 0
         
         secNumber = Int(calcDisplay.text!)
-        
-        
         
         if operation == "+" {
             result = firstNumber! + secNumber!
         }
-        else if operation == "-" {
-            result = firstNumber! - secNumber!
-        }
-        else if operation == "/" {
-            result = firstNumber! / secNumber!
-        }
-        else if operation == "*" {
-            result = firstNumber! * secNumber!
-        }
-        //result = firstNumber! + secNumber!
         print("new line")
         print(firstNumber)
         print(operation)
-        
         print(secNumber)
-        
         print(result)
         
-        if operation != " " {
-        calcDisplay.text = "\(firstNumber) \(operation) \(secNumber) equals \(result)"
-        }
+        calcDisplay.text = String(result)
     }
-    @IBAction func clear(sender: AnyObject) {
-        secNumber = 0;
-        firstNumber = 0;
-        operation = " ";
-        calcDisplay.text = "0"
-    }
+    
     
     @IBAction func calcTap(sender: AnyObject) {
         isTypingNum = false
         firstNumber = Int(calcDisplay.text!)
         print(firstNumber)
         
-        operation = sender.currentTitle
+        operation = String(sender.currentTitle)
         print(operation)
     }
     
